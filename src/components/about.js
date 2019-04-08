@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-  return {
-    counter: state.counter
-  }
-}
+	return {
+		counter: state.counter
+	}
+};
 
 class About extends Component {
   render() {
@@ -18,6 +18,6 @@ class About extends Component {
       </div>
     )
   }
-}
+};
 
 export default connect(mapStateToProps)(About);

@@ -14,6 +14,6 @@ export default class Home extends Component {
         <br />
         <button onClick={this.tryIt}>Dispatch</button>
       </div>
-    );
+    )
   }
-}
+};

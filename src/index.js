@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import style from './main.css';
 import { Provider } from 'react-redux';
 import store from './store';
 import Home from './components/home';
 import About from './components/about';
 import Counter from './components/counter';
 import { HashRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
+
+import 'antd-mobile/dist/antd-mobile.css';
+import { TabBar } from 'antd-mobile';
+import HomeSvg from './assets/home.svg';
+import NewsSvg from './assets/news.svg';
+import ProductSvg from './assets/product.svg';
+import MineSvg from './assets/mine.svg';
 
 class Index extends React.Component {
   render() {

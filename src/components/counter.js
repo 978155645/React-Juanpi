@@ -9,7 +9,7 @@ const mapStateToProps = state => {
     counter1: state.counter1,
     lists: state.lists,
     total: state.total
-  };
+  }
 };
 
 class Counter extends React.Component {
@@ -42,7 +42,7 @@ class Counter extends React.Component {
   componentDidMount() {
     this.props.fetchList();
   }
-}
+};
 
 const CounterContainer = connect(mapStateToProps,{ increase, decrease, fetchList })(Counter);
 
